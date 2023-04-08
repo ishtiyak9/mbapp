@@ -26,18 +26,6 @@ jobs:
         push: true
         tags: ishtiyak4/mbapp:latest
 
-    - name: Install Docker on remote host
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        script: |
-          sudo apt-get update
-          sudo apt-get install docker.io
-          sudo systemctl start docker
-          sudo systemctl enable docker
-
     - name: Deploy app
       uses: appleboy/ssh-action@master
       with:
