@@ -33,8 +33,8 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: ${{ secrets.SERVER_SSH_PORT }}
-      script: |
-          sudo docker stop mbapp || true
-          sudo docker rm mbapp || true
-          sudo docker pull ishtiyak4/mbapp:latest
-          sudo docker run -d --name mbapp -p 8000:8000 ishtiyak4/mbapp:latest
+          script: |
+              sudo docker stop mbapp || true
+              sudo docker rm mbapp || true
+              sudo docker pull ishtiyak4/mbapp:latest
+              sudo docker run -d --name mbapp -p 8000:8000 ishtiyak4/mbapp:latest
