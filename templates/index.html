@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InMeet Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+            integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="container ">
+    <!-- Content here -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">InMeet Manager</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                 aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/admin">Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="api/schema/swagger-ui/">Swagger Documentation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="api/schema/redoc/">Redoc Documentation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col">
+            <h3 class="text-center text-success" style="margin-top: 80px">
+                Welcome to InMeet APIs & Admin Panel!
+            </h3>
+
+            <section class="d-flex justify-content-center mt-5">
+                <a href="/admin" class="btn btn-outline-secondary " style="margin-right: 10px">Admin
+                    Panel</a>
+                <a href="api/schema/swagger-ui/" class="btn btn-outline-secondary ">API Documentation</a>
+            </section>
+
+            <!-- <ul class="list-group list-group-horizontal d-flex justify-content-center mt-5">
+                <a href="/admin" class="btn btn-outline-secondary">
+                    <li class="">Admin Panel</li>
+                </a>
+                <a href="/api/schema/swagger-ui" class="btn btn-outline-secondary">
+                    <li class="">API Documentation</li>
+                </a>
+            </ul> -->
+        </div>
+        <div class="col" style="margin-top: 50px">
+            <img src="https://static.vecteezy.com/system/resources/previews/005/948/644/large_2x/diverse-business-people-meeting-at-boardroom-table-concept-free-vector.jpg"
+                 class="img-fluid" alt="...">
+        </div>
+    </div>
+
+</body>
+
+</html>
