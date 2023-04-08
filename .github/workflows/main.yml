@@ -37,4 +37,4 @@ jobs:
               sudo docker stop mbapp || true
               sudo docker rm mbapp || true
               sudo docker pull ishtiyak4/mbapp:latest
-              sudo docker run -d --name mbapp -p 8000:8000 ishtiyak4/mbapp:latest
+              sudo docker run -d --name mbapp --restart always -p 8000:8000 ishtiyak4/mbapp:latest
